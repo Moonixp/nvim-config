@@ -16,6 +16,11 @@ return require("packer").startup(function(use)
 		},
 	})
 
+    use {
+        "nvim-telescope/telescope-file-browser.nvim",
+        requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+    }
+
 	-- Telescope Advanced Git Search
 	use({
 		"aaronhallaert/ts-advanced-git-search.nvim",
@@ -58,7 +63,15 @@ return require("packer").startup(function(use)
 	use("tpope/vim-surround")
 
 	-- Wilder
-	use("gelguy/wilder.nvim")
+    use("gelguy/wilder.nvim")
+
+    use {
+        "startup-nvim/startup.nvim",
+         requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+         config = function()
+              require("startup").setup({theme = "evil"})
+        end
+        }
 
 	-- LSP
 	use({

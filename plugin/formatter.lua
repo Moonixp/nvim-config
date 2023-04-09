@@ -105,6 +105,7 @@ require("formatter").setup({
 		typescriptreact = prettier_config,
 		typescript = prettier_config,
 		json = prettier_config,
+        --[[
 		["jsonc"] = prettier_config,
 		["json5"] = prettier_config,
 		["json-stringify"] = prettier_config,
@@ -114,14 +115,9 @@ require("formatter").setup({
 		["json-to-graphql-variables"] = prettier_config,
 		["json-to-graphql-variables-mutation"] = prettier_config,
 		["json-to-graphql-variables-query"] = prettier_config,
-
+        --]]
 		-- LUA
 		lua = lua_config,
-
-		-- PHP
-		-- php = php_config,
-
-		-- All
 		["*"] = all_config,
 	},
 })
