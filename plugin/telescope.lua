@@ -4,20 +4,25 @@ local telescope = require("telescope")
 
 -- Configure telescope to search hidden files, (except .git and .node_modules)
 telescope.setup({
+    defaults ={
+    disable_devicons = false,
+    color_devicons = true,
+},
+    --[[
 	pickers = {
 		find_files = {
 			find_command = {
-				"fd",
+				"rg",
                 ".",
 				"--files",
 				"--hidden",
 				"--glob",
 				"!.git",
 				"--glob",
-				"!node_modules", --]]
+				"!node_modules",
 			},
 		},
-	},
+	}, --]]
 })
 
 telescope.load_extension "file_browser"
@@ -25,7 +30,7 @@ telescope.load_extension "file_browser"
 local builtin = require("telescope.builtin")
 
 -- Find file name in project
-vim.keymap.set("n", "<leader>fs", builtin.fd, {})
+vim.keymap.set("n", "<leader>fs", builtin.find_files, {})
 -- Find file name in git project
 vim.keymap.set("n", "<leader>gs", builtin.git_files, {})
 -- String search across project (RIPGrep)

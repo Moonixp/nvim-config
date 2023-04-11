@@ -1,2 +1,9 @@
-require("lsp-format").setup {}
-vim.cmd [[cabbrev wq execute "Format sync" <bar> wq]]
+-- FORMATTER
+------------
+
+vim.cmd([[ 
+    augroup fmt 
+        autocmd! 
+        autocmd BufWritePre * undojoin | Neoformat 
+    augroup END 
+]])
