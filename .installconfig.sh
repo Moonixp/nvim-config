@@ -18,7 +18,7 @@ read ans
 running "Installing Packer..."
 [ -f /bin/git ] && printf "%s\n" "git found running...." || ERR "git not found" 
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
-~/.local/share/nvim/site/pack/packer/start/packer.nvim
+    ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 running "Some dependices... [ ripgrep for telescope ]"
 sudo pacman -Sy ripgrep  --noconfirm || ERR "could not install ripgrep..."
