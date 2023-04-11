@@ -109,36 +109,46 @@ _G.packer_plugins = {
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["copilot.vim"] = {
-    loaded = true,
-    path = "/home/unix/.local/share/nvim/site/pack/packer/start/copilot.vim",
-    url = "https://github.com/github/copilot.vim"
-  },
   ["fidget.nvim"] = {
-    config = { "\27LJ\2\nâ\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\vwindow\1\0\2\vborder\vshadow\nblend\3\0\ttext\1\0\0\1\0\1\fspinner\18bouncing_ball\nsetup\vfidget\frequire\0" },
+    config = { "\27LJ\2\nâ\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\vwindow\1\0\2\nblend\3\0\vborder\vshadow\ttext\1\0\0\1\0\1\fspinner\18bouncing_ball\nsetup\vfidget\frequire\0" },
     loaded = true,
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/fidget.nvim",
     url = "https://github.com/j-hui/fidget.nvim"
-  },
-  ["formatter.nvim"] = {
-    loaded = true,
-    path = "/home/unix/.local/share/nvim/site/pack/packer/start/formatter.nvim",
-    url = "https://github.com/mhartington/formatter.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
+  gruvbox = {
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
+  },
   harpoon = {
     loaded = true,
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["live-server"] = {
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/live-server",
+    url = "https://github.com/manzeloth/live-server"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -150,6 +160,11 @@ _G.packer_plugins = {
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/lush.nvim",
     url = "https://github.com/rktjmp/lush.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -159,6 +174,27 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  neoformat = {
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
+  ["nvim-autopairs"] = {
+    config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -174,6 +210,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/nvim-transparent",
     url = "https://github.com/xiyaowong/nvim-transparent"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -200,6 +241,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["presence.nvim"] = {
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/presence.nvim",
+    url = "https://github.com/andweeb/presence.nvim"
   },
   ["rose-pine"] = {
     config = { "\27LJ\2\ne\0\0\3\0\6\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\3\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\nsetup\14rose-pine\frequire\0" },
@@ -246,6 +292,16 @@ _G.packer_plugins = {
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vgit.nvim"] = {
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/vgit.nvim",
+    url = "https://github.com/tanvirtin/vgit.nvim"
+  },
+  ["vim-clang-format"] = {
+    loaded = true,
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/vim-clang-format",
+    url = "https://github.com/rhysd/vim-clang-format"
+  },
   ["vim-colors-meh"] = {
     loaded = true,
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/vim-colors-meh",
@@ -266,20 +322,15 @@ _G.packer_plugins = {
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
-  ["vim-gitgutter"] = {
+  ["vim-hexokinase"] = {
     loaded = true,
-    path = "/home/unix/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
-    url = "https://github.com/airblade/vim-gitgutter"
+    path = "/home/unix/.local/share/nvim/site/pack/packer/start/vim-hexokinase",
+    url = "https://github.com/RRethy/vim-hexokinase"
   },
   ["vim-smoothie"] = {
     loaded = true,
     path = "/home/unix/.local/share/nvim/site/pack/packer/start/vim-smoothie",
     url = "https://github.com/psliwka/vim-smoothie"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "/home/unix/.local/share/nvim/site/pack/packer/start/vim-surround",
-    url = "https://github.com/tpope/vim-surround"
   },
   ["wilder.nvim"] = {
     loaded = true,
@@ -294,26 +345,30 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: smartcolumn.nvim
-time([[Config for smartcolumn.nvim]], true)
-try_loadstring("\27LJ\2\nè\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\23disabled_filetypes\1\0\0\1\b\0\0\thelp\ttext\rmarkdown\nnetrw\20typescriptreact\bphp\ash\nsetup\16smartcolumn\frequire\0", "config", "smartcolumn.nvim")
-time([[Config for smartcolumn.nvim]], false)
--- Config for: fidget.nvim
-time([[Config for fidget.nvim]], true)
-try_loadstring("\27LJ\2\nâ\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\vwindow\1\0\2\vborder\vshadow\nblend\3\0\ttext\1\0\0\1\0\1\fspinner\18bouncing_ball\nsetup\vfidget\frequire\0", "config", "fidget.nvim")
-time([[Config for fidget.nvim]], false)
 -- Config for: ts-advanced-git-search.nvim
 time([[Config for ts-advanced-git-search.nvim]], true)
 try_loadstring("\27LJ\2\nX\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0'\2\3\0B\0\2\1K\0\1\0\24advanced_git_search\19load_extension\14telescope\frequire\0", "config", "ts-advanced-git-search.nvim")
 time([[Config for ts-advanced-git-search.nvim]], false)
+-- Config for: smartcolumn.nvim
+time([[Config for smartcolumn.nvim]], true)
+try_loadstring("\27LJ\2\nè\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\23disabled_filetypes\1\0\0\1\b\0\0\thelp\ttext\rmarkdown\nnetrw\20typescriptreact\bphp\ash\nsetup\16smartcolumn\frequire\0", "config", "smartcolumn.nvim")
+time([[Config for smartcolumn.nvim]], false)
 -- Config for: startup.nvim
 time([[Config for startup.nvim]], true)
 try_loadstring("\27LJ\2\nG\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\ntheme\tevil\nsetup\fstartup\frequire\0", "config", "startup.nvim")
 time([[Config for startup.nvim]], false)
+-- Config for: fidget.nvim
+time([[Config for fidget.nvim]], true)
+try_loadstring("\27LJ\2\nâ\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\vwindow\1\0\2\nblend\3\0\vborder\vshadow\ttext\1\0\0\1\0\1\fspinner\18bouncing_ball\nsetup\vfidget\frequire\0", "config", "fidget.nvim")
+time([[Config for fidget.nvim]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\ns\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\15float_opts\1\0\1\vborder\vcurved\1\0\1\14direction\nfloat\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
 time([[Config for toggleterm.nvim]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\ne\0\0\3\0\6\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\3\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\nsetup\14rose-pine\frequire\0", "config", "rose-pine")

@@ -6,6 +6,8 @@ return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 
 	-- Telescope
+	use("nvim-lua/plenary.nvim")
+
 	use({
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.1",
@@ -16,10 +18,10 @@ return require("packer").startup(function(use)
 		},
 	})
 
-    use {
-        "nvim-telescope/telescope-file-browser.nvim",
-        requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-    }
+	use({
+		"nvim-telescope/telescope-file-browser.nvim",
+		requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+	})
 
 	-- Telescope Advanced Git Search
 	use({
@@ -47,31 +49,55 @@ return require("packer").startup(function(use)
 	-- Undo Tree
 	use("mbbill/undotree")
 
+	-- markdown preveiw
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	})
+
 	-- Fugitive
 	use("tpope/vim-fugitive")
 
-	-- Commentary
+	-- commentary
 	use("tpope/vim-commentary")
+
+	-- Nvim Tree
+	use({ "nvim-tree/nvim-tree.lua", dependencies = {
+		"nvim-tree/nvim-web-devicons",
+	} })
 
 	-- Smoothie
 	use("psliwka/vim-smoothie")
 
-	-- Github Copilot
-	use("github/copilot.vim")
+	-- Live-server
+	use("manzeloth/live-server")
 
-	-- Surround
-	use("tpope/vim-surround")
+	-- Discord
+	use("andweeb/presence.nvim")
+
+	-- autopair
+	use({
+		"windwp/nvim-autopairs",
+		config = function()
+			require("nvim-autopairs").setup({})
+		end,
+	})
+
+	-- Function lsp_signature
+	use("ray-x/lsp_signature.nvim")
 
 	-- Wilder
-    use("gelguy/wilder.nvim")
+	use("gelguy/wilder.nvim")
 
-    use {
-        "startup-nvim/startup.nvim",
-         requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
-         config = function()
-              require("startup").setup({theme = "evil"})
-        end
-        }
+	use({
+		"startup-nvim/startup.nvim",
+		requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+		config = function()
+			require("startup").setup({ theme = "evil" })
+		end,
+	})
 
 	-- LSP
 	use({
@@ -94,11 +120,19 @@ return require("packer").startup(function(use)
 			-- Snippets
 			{ "L3MON4D3/LuaSnip" }, -- Required
 			{ "rafamadriz/friendly-snippets" }, -- Optional
+			{ "jose-elias-alvarez/null-ls.nvim" },
 		},
 	})
 
-	-- Formatter
-	use("mhartington/formatter.nvim")
+	--[[ Formatter
+     use("mhartington/formatter.nvim")
+    --]]
+
+	--neoformat
+	use("sbdchd/neoformat")
+
+	--clangd format
+	use("rhysd/vim-clang-format")
 
 	-- Smart Column
 	use({
@@ -117,7 +151,6 @@ return require("packer").startup(function(use)
 			})
 		end,
 	})
-
 	-- Toggleterm
 	use({
 		"akinsho/toggleterm.nvim",
@@ -157,8 +190,11 @@ return require("packer").startup(function(use)
 		},
 	})
 
-	-- GitGutter
-	use("airblade/vim-gitgutter")
+	--Vgit
+	use({ "tanvirtin/vgit.nvim", requires = { "nvim-lua/plenary.nvim" } })
+
+	-- Hexokinase ( colors )
+	use({ "RRethy/vim-hexokinase", run = "make hexokinase" })
 
 	-- Vim Cool
 	use("romainl/vim-cool")
@@ -192,4 +228,10 @@ return require("packer").startup(function(use)
 	use({
 		"davidosomething/vim-colors-meh",
 	})
+	-- Colorschemes - others
+	use("EdenEast/nightfox.nvim")
+
+	use("morhetz/gruvbox")
+
+	use("projekt0n/github-nvim-theme")
 end)

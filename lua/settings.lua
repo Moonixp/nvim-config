@@ -69,11 +69,10 @@ vim.opt.undofile = true
 -- Improve sidescroll
 vim.opt.sidescroll = 1
 
--- Make fast!
-vim.opt.updatetime = 50
-
--- Set leader key
-vim.g.mapleader = " "
+--setup for vgit
+vim.o.updatetime = 300
+vim.o.incsearch = false
+vim.wo.signcolumn = "yes"
 
 -- Whitespace chars
 vim.opt.listchars = { tab = ">-", trail = "~", space = "·", eol = "↵" }
