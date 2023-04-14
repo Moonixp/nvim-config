@@ -1,17 +1,22 @@
 -- VIM REMAPS
 -------------
-
 -- Toggle NETRW
---vim.keymap.set("n", "<leader>b", ":Ex<CR>")
+-- vim.keymap.set("n", "<leader>b", ":Ex<CR>")
+
+-- Set leader key
+vim.g.mapleader = " "
 
 -- Write / save
 vim.keymap.set("n", "<leader>s", ":w<CR>")
 
 -- Nvim Tree
-vim.keymap.set("n", "<C-n>", ":NvimTreeToggle")
+vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>")
 
 -- Toggle line numbers
 vim.keymap.set("n", "<leader>n", ":set invnumber invrelativenumber<CR>")
+
+-- Toggle  
+vim.keymap.set("n", "<leader><TAB>", ":set invlist<CR>")
 
 -- Toggle cmdheight
 vim.keymap.set("n", "<leader>c", function()
@@ -44,5 +49,3 @@ vim.keymap.set("n", "<Down>", ":echo 'Use j ya twat'<CR>")
 -- Set jk to esc
 vim.keymap.set("i", "jk", "<ESC>")
 
--- Set leader key
-vim.g.mapleader = " "

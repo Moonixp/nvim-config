@@ -1,5 +1,5 @@
-require("plugins") -- where all the plugins install are
-require("keymap") -- where the keymaps are
+require("plugins")  -- where all the plugins install are
+require("keymap")   -- where the keymaps are
 require("settings") -- where the settings are
 
 --[[ Folder Structure

@@ -20,6 +20,7 @@ require("lualine").setup({
 			tabline = 1000,
 			winbar = 1000,
 		},
+    theme = 'pywal-nvim',
 	},
 	sections = {
 		lualine_a = { "mode" },
