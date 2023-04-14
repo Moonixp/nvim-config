@@ -1,7 +1,6 @@
 -- FORMATTER
 ------------
-
-vim.cmd([[ 
+vim.cmd([[
     augroup fmt 
         autocmd! 
         autocmd BufWritePre * undojoin | Neoformat 

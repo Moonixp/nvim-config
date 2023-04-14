@@ -62,8 +62,6 @@ function ManageColors(color)
 	vim.api.nvim_set_hl(0, "DiffDelete", { bg = "NONE", fg = "#bd5c5c" })
 end
 
-ManageColors()
-
 -- Quick functions for fave color schemes
 function Catppuccin()
 	ManageColors("catppuccin")
@@ -72,3 +70,9 @@ end
 function Meh()
 	ManageColors("meh")
 end
+
+function Pywall()
+    ManageColors("pywal")
+end
+
+Pywall()
