@@ -1,4 +1,6 @@
-# nvim config 
+## Neovim config
+
+![some](./static/nvim.png)
 
 > to install run `./.installconfig.sh`
 

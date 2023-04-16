@@ -2,6 +2,7 @@
 ------------------
 
 -- Theme customizations
+--[[
 require("rose-pine").setup({
 	disable_background = true,
 	disable_float_background = true,
@@ -15,3 +16,4 @@ require("rose-pine").setup({
 		TelescopePreviewBorder = { fg = "muted" },
 	},
 })
+--]]

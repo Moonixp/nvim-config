@@ -1,2 +1,4 @@
-local pywal = require('pywal')
+--[[
+local pywal = require("pywal")
 pywal.setup()
+--]]
