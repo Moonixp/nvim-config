@@ -1,7 +1,8 @@
 -- CATPPUCCIN THEME
 -------------------
 
--- Theme customizations
+--[[
+Theme customizations
 require("catppuccin").setup({
 	flavour = "mocha", -- latte, frappe, macchiato, mocha
 	background = { -- :h background
@@ -43,3 +44,4 @@ require("catppuccin").setup({
 		mini = false,
 	},
 })
+--]]

@@ -15,17 +15,17 @@ vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>")
 -- Toggle line numbers
 vim.keymap.set("n", "<leader>n", ":set invnumber invrelativenumber<CR>")
 
--- Toggle  
+-- Toggle
 vim.keymap.set("n", "<leader><TAB>", ":set invlist<CR>")
 
 -- Toggle cmdheight
 vim.keymap.set("n", "<leader>c", function()
-    local cmdheight = vim.api.nvim_get_option("cmdheight")
-    if cmdheight == 1 then
-        vim.api.nvim_set_option("cmdheight", 0)
-    else
-        vim.api.nvim_set_option("cmdheight", 1)
-    end
+	local cmdheight = vim.api.nvim_get_option("cmdheight")
+	if cmdheight == 1 then
+		vim.api.nvim_set_option("cmdheight", 0)
+	else
+		vim.api.nvim_set_option("cmdheight", 1)
+	end
 end)
 
 -- Paste replace visual selection without copying it
@@ -48,4 +48,3 @@ vim.keymap.set("n", "<Down>", ":echo 'Use j ya twat'<CR>")
 
 -- Set jk to esc
 vim.keymap.set("i", "jk", "<ESC>")
-
