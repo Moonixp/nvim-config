@@ -1,10 +1,21 @@
 -- COLORS
 ---------
 -- Runs on start
+--edge
+function Edge()
+	vim.cmd([[
+    let g:edge_style = 'aura'
+    let g:edge_better_performance = 1
+    colorscheme edge
+    let g:lightline = {'colorscheme' : 'edge'}
+    ]])
+end
+
 function ManageColors(color)
 	local default = "tokyobones"
 	color = color or default
-	vim.cmd.colorscheme(color)
+	--	vim.cmd.colorscheme(color)
+	Edge()
 
 	-- Fix Fidget color
 	vim.api.nvim_set_hl(0, "FidgetTask", { bg = "none", fg = "#70788a" })

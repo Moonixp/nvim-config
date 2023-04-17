@@ -235,4 +235,7 @@ return require("packer").startup(function(use)
 
 	-- Colorschemes Tokonight
 	use("folke/tokyonight.nvim")
+
+	-- Edge
+	use("sainnhe/edge")
 end)
