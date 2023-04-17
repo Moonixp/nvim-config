@@ -87,11 +87,32 @@ Header = {
 -- Config gif header
 require("alpha.term")
 
+-- predefined for madara.gif and sasuke.gif
+-- used to get the required height and width
+function Getgif(str)
+	local cmd = "chafa -c full --fg-only --symbols braille ~/.config/nvim/static/" .. str .. ".gif"
+	if str == "madara" then
+		return cmd, 60, 20
+	elseif str == "sharingan" then
+		return cmd, 90, 20
+	end
+end
+local tempCommand, tempWidth, tempHeight = Getgif("madara")
 local dynamic_header = {
 	type = "terminal",
-	command = "chafa -c full --fg-only --symbols braille ~/.config/nvim/static/sharingan.gif",
-	width = 90,
+	command = tempCommand,
+	width = tempWidth,
+	height = tempHeight,
+
+	--[[
+	command = "chafa -c full --fg-only --symbols braille ~/.config/nvim/static/madara.gif",
+	width = 60,
 	height = 20,
+    for sharingan 
+    width = 90,
+	height = 20,
+    ]]
+	--
 	opts = {
 		position = "center",
 		redraw = true,
