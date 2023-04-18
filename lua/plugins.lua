@@ -104,6 +104,9 @@ return require("packer").startup(function(use)
 		end,
 	})
 
+	-- Indent Blank line
+	use("lukas-reineke/indent-blankline.nvim")
+
 	-- Function lsp_signature
 	use("ray-x/lsp_signature.nvim")
 
