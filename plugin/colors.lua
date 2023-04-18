@@ -15,6 +15,8 @@ function ManageColors(color)
 	local default = "tokyobones"
 	color = color or default
 	--	vim.cmd.colorscheme(color)
+	--	vim.cmd("TransparentDisable")
+
 	Edge()
 
 	-- Fix Fidget color

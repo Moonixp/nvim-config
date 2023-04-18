@@ -87,32 +87,34 @@ Header = {
 -- Config gif header
 require("alpha.term")
 
--- predefined for madara.gif and sasuke.gif
--- used to get the required height and width
+-- used to get the required height and width for the gifs
 function Getgif(str)
+	str = str or "love_death_and_robot"
 	local cmd = "chafa -c full --fg-only --symbols braille ~/.config/nvim/static/" .. str .. ".gif"
-	if str == "madara" then
+	if str == "madara" or str == "love_death_and_robot" or str == "eye" or str == "wolf" or "kakashi_fight" then
 		return cmd, 60, 20
-	elseif str == "sharingan" then
+	elseif str == "sharingan" or str == "love_death_and_robot" then
 		return cmd, 90, 20
 	end
 end
-local tempCommand, tempWidth, tempHeight = Getgif("madara")
+
+-- available options madara,sharingan,
+math.randomseed(os.time())
+---@type number
+local index = math.random(1, 6)
+---@type table
+local HeaderType = { "madara", "love_death_and_robot", "eye", "wolf", "sharingan", "kakashi_fight" }
+
+-- for random use this
+local tempCommand, tempWidth, tempHeight = Getgif(HeaderType[index - 1])
+-- for specific use this
+--local tempCommand, tempWidth, tempHeight = Getgif("kakashi_fight")
 local dynamic_header = {
 	type = "terminal",
 	command = tempCommand,
 	width = tempWidth,
 	height = tempHeight,
 
-	--[[
-	command = "chafa -c full --fg-only --symbols braille ~/.config/nvim/static/madara.gif",
-	width = 60,
-	height = 20,
-    for sharingan 
-    width = 90,
-	height = 20,
-    ]]
-	--
 	opts = {
 		position = "center",
 		redraw = true,
@@ -142,9 +144,10 @@ local buttons = {
 	type = "group",
 	val = {
 		button("f", " -> Find file", ":Telescope find_files <CR>"),
-		button("e", " -> New file", ":RnvimrToggle <CR>"),
+		button("e", " -> File Broswer", ":Telescope file_browser <CR>"),
 		button("p", " -> Find project", ":Telescope projects <CR>"),
-		-- button("r", " -> Recently used files", ":Telescope oldfiles <CR>"),
+		button("q", " -> quit", ":q!<CR>"),
+		-- button("r, " -> Recently used files", ":Telescope oldfiles <CR>"),
 		button("c", " -> Configuration", ":e ~/.config/nvim/init.lua <CR>"),
 	},
 	opts = {
