@@ -61,6 +61,9 @@ return require("packer").startup(function(use)
 
 	use("nvim-treesitter/playground")
 
+	-- Create Person treesitter commands
+	use({ "axkirillov/easypick.nvim", requires = "nvim-telescope/telescope.nvim" })
+
 	-- Harpoon
 	use("theprimeagen/harpoon")
 
@@ -92,6 +95,9 @@ return require("packer").startup(function(use)
 
 	-- Live-server
 	use("manzeloth/live-server")
+
+	-- Packer
+	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 
 	-- Discord
 	use("andweeb/presence.nvim")

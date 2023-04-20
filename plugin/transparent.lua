@@ -1,5 +1,7 @@
--- TRANSPARENT
---------------
+-- TRANSPARENT ( Messed up, when called it works well, but you cant go back )
+------------
+require("transparent").toggle(false)
+--[[
 require("transparent").setup({
 	groups = { -- table: default groups
 		"Normal",
@@ -29,3 +31,4 @@ require("transparent").setup({
 	exclude_groups = {}, -- table: groups you don't want to clear
 })
 vim.keymap.set("n", "<leader>tr", "<cmd>TransparentToggle<CR>")
+--]]

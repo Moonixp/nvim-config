@@ -8,37 +8,16 @@ telescope.setup({
 		disable_devicons = false,
 		color_devicons = true,
 	},
-	--[[
-	pickers = {
-		find_files = {
-			find_command = {
-				"rg",
-                ".",
-				"--files",
-				"--hidden",
-				"--glob",
-				"!.git",
-				"--glob",
-				"!node_modules",
-			},
-		},
-	}, --]]
 })
 
 telescope.load_extension("file_browser")
 -- Keymaps
 local builtin = require("telescope.builtin")
--- Find file name in project
 vim.keymap.set("n", "<leader>fs", builtin.find_files, {})
--- Find man page
 vim.keymap.set("n", "<leader>man", builtin.man_pages, {})
--- String search across project (RIPGrep)
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
--- Use to view help documentation
 vim.keymap.set("n", "<leader>h", builtin.help_tags, {})
--- View recently opened files
 vim.keymap.set("n", "<leader>fo", builtin.oldfiles, {})
-
 vim.keymap.set("n", "<leader>bu", builtin.buffers, {})
 
 vim.keymap.set("n", "<leader>reg", builtin.registers, {})
@@ -48,5 +27,5 @@ vim.keymap.set("n", "<leader>reg", builtin.registers, {})
 vim.keymap.set("n", "<leader>typ", builtin.lsp_definitions, {})
 vim.keymap.set("n", "<leader>mp", builtin.lsp_implementations, {})
 vim.keymap.set("n", "<leader>doc", builtin.lsp_document_symbols, {})
--- vim.keymap.set("n", "<leader>dia", builtin.lsp_diagnostics, {})
 vim.keymap.set("n", "<leader>ref", builtin.lsp_references, {})
+vim.keymap.set("n", "<leader>com", builtin.commands, {})
