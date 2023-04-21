@@ -87,7 +87,7 @@ Header = {
 -- Config gif header
 require("alpha.term")
 
--- used to get the required height and width for the gifs
+-- used to get the obtain height and width for the gifs
 function Getgif(str)
 	str = str or "love_death_and_robot"
 	local cmd = "chafa -c full --fg-only --symbols braille ~/.config/nvim/static/" .. str .. ".gif"
@@ -106,7 +106,7 @@ local index = math.random(1, 6)
 local HeaderType = { "madara", "love_death_and_robot", "eye", "wolf", "sharingan", "kakashi_fight" }
 
 -- for random use this
-local tempCommand, tempWidth, tempHeight = Getgif(HeaderType[index - 1])
+local tempCommand, tempWidth, tempHeight = Getgif(HeaderType[index])
 -- for specific use this
 --local tempCommand, tempWidth, tempHeight = Getgif("kakashi_fight")
 local dynamic_header = {
