@@ -4,9 +4,7 @@ local ok, lualine = pcall(require, "lualine")
 if not ok then
 	return
 end
-local themefile = require("colors")
-local theme = themefile.exportTheme or "tokyobones"
-
+local theme = "tokyobones"
 lualine.setup({
 	options = {
 		icons_enabled = true,
