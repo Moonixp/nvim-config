@@ -61,12 +61,16 @@ return require("packer").startup(function(use)
 
 	use("nvim-treesitter/playground")
 
+	use("folke/zen-mode.nvim")
 	-- Create Person treesitter commands
 	use({ "axkirillov/easypick.nvim", requires = "nvim-telescope/telescope.nvim" })
 
 	-- Harpoon
 	use("theprimeagen/harpoon")
 
+	use("p00f/clangd_extensions.nvim")
+
+	use("simrat39/inlay-hints.nvim")
 	-- Undo Tree
 	use("mbbill/undotree")
 
