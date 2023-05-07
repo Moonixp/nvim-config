@@ -2,9 +2,6 @@
 ---------
 -- Runs on start
 --edge
-local Themecolor = {
-	theme = "nil",
-}
 
 function Edge()
 	vim.cmd([[
@@ -18,10 +15,9 @@ end
 function ManageColors(color)
 	local default = "tokyobones"
 	color = color or default
-	Themecolor.theme = color
-	--	vim.cmd.colorscheme(color)
+	vim.cmd.colorscheme(color)
 	--	vim.cmd("TransparentDisable")
-	Edge()
+	-- Edge()
 	-- Fix Fidget color
 	vim.api.nvim_set_hl(0, "FidgetTask", { bg = "none", fg = "#70788a" })
 	vim.api.nvim_set_hl(0, "FidgetTitle", { bg = "none", fg = "#70788a" })
@@ -70,6 +66,5 @@ function Pywall()
 	ManageColors("pywal")
 end
 
-ManageColors("tokyobones")
-
-return Themecolor
+Pywall()
+--ManageColors("tokyobones")
